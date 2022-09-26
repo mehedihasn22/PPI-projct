@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+a,a:hover {
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    padding-top: 12px;
+    background-color: #0872b9;
+    color: #fff;
+}
+
+.icon ul {
+    float: right;
+}
+
+.icon ul li {
+    float: left;
+    padding: 0 15px;
+}
+
+.icon ul li a {
+    color: #fff;
+    transition: all linear .3s;
+}
+
+.icon ul li a:hover {
+    color: #000;
+    transition: all linear .3s;
+}
+
+.nav-link .active{
+    color: #0872b9;
+}
+.navbar-nav .nav-item .nav-link.active{
+    color: #0872b9;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: red;
+    
+}
+
+/*banner part css start*/
+#banner {
+    background: url(../images/bennar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.banner_overlay {
+    padding: 87px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ban_con {
+    color: #fff;
+    text-align: right;
+}
+
+.ban_con h4 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.ban_con h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.ban_con p {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+}
+
+.ban_con a {
+    padding: 11px 35px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.ban_con a:hover {
+    background-color: #0872b9;
+    border: 2px solid #0872b9;
+    transition: all linear .3s;
+}
+
+/*banner part css end*/
+
+/*about part css start*/
+.common_heading h4{
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 38px;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.common_heading{
+    position: relative;
+}
+.common_heading img{
+    position: absolute;
+    top: 28px;
+    left: 46%;
+}
+ 
+.about_con{
+    padding-top: 47px;
+} 
+.about_con p{
+    line-height: 30px;
+    font-size: 13px;
+    color: #555555;
+}
+/*about part css end*/
+
+/*sarvices part css start*/
+.ser_main{
+    position: relative;
+    margin-top: 30px;
+}
+.ser_icon_main{
+    height: 80px;
+    width: 80px;
+    background-color: #f1f1f1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+     top: -38px;
+    left: 141px;
+}
+.ser_icon{
+    height: 70px;
+    width: 70px;
+    background-color: #f1f1f1; 
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     transition: all linear .3s;
+    
+}
+.ser_main:hover .ser_icon_main,
+.ser_main:hover .ser_icon{
+    background-color: #5bc5f4;
+    transition: all linear .3s;
+}
+
+.ser_con{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 50px 22px 2px;
+    transition: all linear .3s;
+
+}
+.ser_con:hover{
+    box-shadow: 0 0 10px black;
+    transition: all linear .3s;
+}
+.ser_con h4{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.ser_con p{
+     font-size: 13px;
+    font-weight: 400;
+    font-family: 'open sans', sans-serif;
+    color: #555555;
+}
+/*sarvices part css end*/
+
+/*portfolio part css start*/
+
+.sm_img{
+    margin-bottom: 20px;
+    position: relative;
+}
+.gly_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.sm_img:hover .gly_overlay{
+     transform: scale(1);
+    transition: all linear .3s;
+}
+.big_img{
+    position: relative;
+}
+.big_img:hover .gly_overlay{
+     transform: scale(1);
+    transition: all linear .3s;
+}
+.gly_overlay a{
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    background-color: #5bc5f4;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+/*portfolio part css end*/
+/*team part css start*/
+.team_img{
+    position: relative;
+}
+.team_overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 37%;
+    background-color: rgba(0, 0, 0, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(0);
+    transform: all linear .3s;
+}
+.team_overlay ul{
+    padding-left: 0;
+}
+.team_overlay ul li{
+    padding: 10px 0;
+}
+.team_overlay ul li a{
+     color: #fff;
+    height: 40px;
+    width: 40px;
+    display: block;
+    border: 2px solid #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+/*    margin: 10px 0;*/
+}
+.team_overlay ul li a:hover{
+    border: 2px solid #5bc5f4;
+    background-color: #5bc5f4;
+}
+.team_title{
+    text-align: center; 
+}
+.team_title h4{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.team_title p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'open sans', sans-serif;
+    margin-bottom: 10px;
+}
+.team_main:hover .team_title h4{
+    color: #5bc5f4;
+}
+.team_main:hover .team_overlay{
+     transform: scaleX(1);
+    transition: all linear .3s;
+}
+/*team part css end*/
+
+/*Testimonial part css start*/
+.test_con{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 22px;
+    position: relative;
+   
+}
+.round_img{
+    text-align:  center;
+    margin-bottom: 40px;
+}
+.test_con ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+.test_con h4{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.test_con ul li a{
+    color: #5bc5f4;
+}
+.test_con h6{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+.test_con p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'oswald', sans-serif;
+}
+.piramid{
+    height: 40px;
+    width: 40px;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: -14px;
+    left: 250px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+
+/*Testimonial part css end*/
+
+/*footer part css start*/
+footer{
+    background-color: black;
+    margin-top: 50px;
+    padding: 20px 0;
+    color: #fff;
+}
+.f_con p{
+    font-size: 13px;
+    padding-top: 20px;
+}
+.f_common h4{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.f_icon ul{
+    padding-left: 0;
+}
+.f_icon ul li a{
+    height: 40px;
+    width: 40px;
+    background-color: #5bc5f4;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    margin-top: 7px;
+}
+.f_number{
+    font-size:13px;
+}
+
+
+.f_menu ul{
+    padding-left: 0;
+}
+.f_menu ul li a{
+    color: #fff;
+    transform: all linear .3s;
+}
+.f_menu ul li a:hover{
+    color: #54afd7;
+    transform: all linear .3s;
+}
+.f_gly{
+    margin-bottom: 10px;
+}
+.color{
+    color: red;
+}
+
+/*footer part css end*/
